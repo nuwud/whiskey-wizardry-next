@@ -1,0 +1,19 @@
+{
+  "hosting": {
+    "site": "whiskey-wizardry",
+    "public": ".next",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/"
+      }
+    ],
+    "headers": [
+      {
+        "source": "/sampleData.json",
+        "headers": [{ "key": "Access-Control-Allow-Origin", "value": "*" }]
+      }
+    ]
+  }
+}
